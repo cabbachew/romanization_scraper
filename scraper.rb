@@ -14,7 +14,7 @@ rows = CSV.parse(File.read("100_mountains_korean.csv"), headers: true)
 
 # data_arr = []
 output = CSV.open("output.csv", "w")
-output << ["Name", "Elevation(m)"]
+output << ["name", "height"]
 
 rows.each do |row|
   browser.reset!
